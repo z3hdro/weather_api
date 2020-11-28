@@ -1,0 +1,26 @@
+.cities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 245, 238);
+}
+
+.town {
+    text-align: center;
+    width: 100%;
+    font-size: 3vh;
+    padding: 2vh;
+    border-bottom: 0.1vh solid rgb(0, 0, 0);
+}
+
+.finder {
+    width: 60%;
+    border-radius: 1vh;
+    padding: 1vh;
+    margin: 1vh auto;
+}
+
+.nothing {
+    padding: 2vh;
+}

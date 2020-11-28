@@ -1,0 +1,18 @@
+/* Header */
+
+.header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(253, 246, 234, 0.8);
+    font-size: 3vh;
+}
+
+.change_city_btn {
+    padding: 1vh;
+    background-color: rgb(39, 86, 92);
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 1.5vh;
+}
+
