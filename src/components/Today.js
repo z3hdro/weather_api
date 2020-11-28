@@ -7,7 +7,7 @@ export default function Today({forecast}) {
         let cityName = forecast.timezone.split('/')
         data = <div className={styles.current}>
             <div className={styles.today}>
-                Сегодня
+                Today
             </div>
             <div className={styles.city}>
                 {cityName[1]}
@@ -19,7 +19,7 @@ export default function Today({forecast}) {
                 {Math.round(forecast.current.temp)}<sup>o</sup>
             </div>
             <div className={styles.feels_like}>
-                ощущается как {Math.round(forecast.current.feels_like)}<sup>o</sup>
+                feels like {Math.round(forecast.current.feels_like)}<sup>o</sup>
             </div>
         </div>
     } else {

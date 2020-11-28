@@ -4,7 +4,7 @@ export default function week({forecast}) {
 
     function DayDate(utc) {
         let date = new Date(utc * 1000);
-        let result = new Intl.DateTimeFormat('ru-RU', { weekday: 'long'}).format(date);
+        let result = new Intl.DateTimeFormat('en-US', { weekday: 'long'}).format(date);
         return result[0].toUpperCase() + result.substring(1);
     }
 

@@ -14,7 +14,7 @@ export default function Finder({setForecast, showmenu}) {
             let answer = await response_lat_lon.json()
             let lat = await answer.coord.lat;
             let lon = await answer.coord.lon;
-            let response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,alerts&lang=ru&units=metric&appid=${API_KEY}`)
+            let response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,alerts&units=metric&appid=${API_KEY}`)
             if (response.ok !== false) {
                 let result = await response.json()
                 

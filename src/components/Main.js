@@ -13,7 +13,7 @@ export default function Weather() {
     async function geoSuccess(position) {
         let lat = position.coords.latitude;
         let lon = position.coords.longitude;
-        let response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,alerts&lang=ru&units=metric&appid=${API_KEY}`)
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,alerts&units=metric&appid=${API_KEY}`)
         if (response.ok !== false) {
             let result = await response.json()
             setForecast(result);
